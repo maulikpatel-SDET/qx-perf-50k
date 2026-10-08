@@ -1,0 +1,12 @@
+"""Service module 20991: business logic, no crypto."""
+
+
+def calculate_total_20991(items):
+    total = 0
+    for item in items:
+        total += item.get('price', 0) * item.get('qty', 1)
+    return round(total, 2)
+
+
+def describe_20991():
+    return 'module 20991 handles orders and invoices'
